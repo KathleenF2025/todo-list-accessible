@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Accessible To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font for better typography (optional but nice) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>TaskMaster</h1>
+        <p>Your simple, accessible to-do list</p>
+    </header>
+
+    <main>
+        <section class="add-task">
+            <input type="text" id="task-input" placeholder="Add a new task..." aria-label="Enter a new task">
+            <button id="add-button">Add Task</button>
+        </section>
+
+        <ul id="task-list" aria-label="List of tasks">
+            <!-- Tasks will be added here by JavaScript -->
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
