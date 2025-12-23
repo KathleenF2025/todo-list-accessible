@@ -69,5 +69,43 @@ task-list li {
     border-radius: 8px;
     border: 1px solid #ccc;
 }
+/* Task item styles */
+#task-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#task-list li span {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.delete-btn {
+    background: #DC3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
 
 /* We'll add more styles later for completed tasks and delete buttons */
