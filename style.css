@@ -1,0 +1,73 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', system-ui, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+}
+
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#task-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+#add-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+task-list li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background: #f0f0f0;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* We'll add more styles later for completed tasks and delete buttons */
