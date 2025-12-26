@@ -1,3 +1,5 @@
+// Full functionality: add, complete, delete, persist tasks
+
 // TaskMaster - Accessible To-Do List
 
 const taskInput = document.getElementById('task-input');
