@@ -1,113 +1,166 @@
-/* Enhanced task item styling for better readability */
-
-/* Reset and base styles */
+/* =====================
+   Base Reset
+===================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* =====================
+   Page Layout
+===================== */
 body {
-    font-family: 'Roboto', system-ui, sans-serif;
-    background: #ffffff;
-    color: #000000;
-    line-height: 1.6;
-    padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
+/* =====================
+   Header
+===================== */
 h1 {
-    font-size: 2.5rem;
-    color: #007BFF;
+  font-size: 2.5rem;
+  color: #007BFF;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =====================
+   Add Task Section
+===================== */
 .add-task {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
 }
 
 #task-input {
-    flex: 1;
-    padding: 12px;
-    font-size: 1rem;
-    border: 2px solid #000000;
-    border-radius: 8px;
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 8px;
+}
+
+#task-input:focus {
+  outline: 3px solid #007BFF;
+  outline-offset: 2px;
 }
 
 #add-button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    background: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 #add-button:hover {
-    background: #0056b3;
+  background-color: #0056b3;
 }
 
+#add-button:focus {
+  outline: 3px solid #000000;
+  outline-offset: 2px;
+}
+
+/* =====================
+   Error Message
+===================== */
+#error-message {
+  color: #DC3545;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* =====================
+   Filter Buttons
+===================== */
+div button[data-filter] {
+  margin: 5px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #000000;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+div button[data-filter]:hover {
+  background-color: #e0e0e0;
+}
+
+div button[data-filter]:focus {
+  outline: 3px solid #007BFF;
+  outline-offset: 2px;
+}
+
+/* =====================
+   Task List
+===================== */
 #task-list {
-    list-style: none;
-    max-width: 600px;
-    margin: 0 auto;
+  list-style: none;
+  max-width: 600px;
+  margin: 20px auto;
 }
 
-task-list li {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    background: #f0f0f0;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-}
-/* Task item styles */
 #task-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px;
-    background: #f0f0f0;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 #task-list li span {
-    flex: 1;
-    font-size: 1.1rem;
+  flex: 1;
+  font-size: 1.05rem;
 }
 
+/* =====================
+   Delete Button
+===================== */
 .delete-btn {
-    background: #DC3545;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    font-size: 1rem;
+  background-color: #DC3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 .delete-btn:hover {
-    background: #c82333;
+  background-color: #c82333;
 }
 
-/* Responsive for larger screens */
+.delete-btn:focus {
+  outline: 3px solid #000000;
+  outline-offset: 2px;
+}
+
+/* =====================
+   Responsive
+===================== */
 @media (min-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
+  h1 {
+    font-size: 3rem;
+  }
 }
 
-/* We'll add more styles later for completed tasks and delete buttons */
