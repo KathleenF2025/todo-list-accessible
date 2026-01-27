@@ -80,4 +80,6 @@ Possible future enhancements include:
 
 All core functions (adding, completing, deleting, filtering, and persistence) were tested and function as expected.
 
+Deleted tasks are permanently removed from the list and cannot be restored.
+
 
